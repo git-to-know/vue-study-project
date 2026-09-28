@@ -14,7 +14,7 @@ const emit = defineEmits(['addToFavorite', 'addToCart'])
       v-for="item in items"
       :key="item.id"
       :id="item.id"
-      :imageUrl="item.imageUrl"
+      :imageUrl="`${import.meta.env.BASE_URL}${item.imageUrl}`"
       :title="item.title"
       :price="item.price"
       :onClickAdd="() => emit('addToCart', item)"
