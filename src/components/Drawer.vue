@@ -48,13 +48,13 @@ const buttonDisabled = computed(() => isCreating.value || cartIsEmpty.value)
         v-if="!totalPrice && !orderId"
         title="Корзина пустая"
         description="Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ."
-        imageUrl="/package-icon.png"
+        imageUrl="/vue-study-project/package-icon.png"
       />
       <InfoBlock
         v-if="orderId"
         title="Заказ оформлен!"
         :description="`Ваш заказ #${orderId} скоро будет передан курьерской доставке`"
-        imageUrl="/order-success-icon.png"
+        imageUrl="/vue-study-project/order-success-icon.png"
       />
     </div>
 
