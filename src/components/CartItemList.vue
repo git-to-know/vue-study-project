@@ -1,6 +1,7 @@
 <script setup>
 import CartItem from '@/components/CartItem.vue'
 import { inject } from 'vue'
+const baseUrl = import.meta.env.BASE_URL
 
 const { cart, removeFromCart } = inject('cart')
 </script>
@@ -12,7 +13,7 @@ const { cart, removeFromCart } = inject('cart')
       :key="item.id"
       :title="item.title"
       :price="item.price"
-      :imageUrl="`${import.meta.env.BASE_URL}${item.imageUrl}`"
+      :imageUrl="`${baseUrl}${item.imageUrl}`"
       @on-click-remove="() => removeFromCart(item)"
     />
   </div>
