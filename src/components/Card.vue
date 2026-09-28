@@ -18,7 +18,7 @@ defineProps({
     >
       <img
         class="cursor-pointer absolute top-8 left-8"
-        :src="isFavorite ? '/like-1.svg' : '/like-2.svg'"
+        :src="isFavorite ? '/vue-study-project/like-1.svg' : '/vue-study-project/like-2.svg'"
         alt="Like"
         @click="onClickFavorite"
       />
@@ -32,7 +32,11 @@ defineProps({
           <b>{{ price }} руб.</b>
         </div>
 
-        <img @click="onClickAdd" :src="!isAdded ? '/plus.svg' : '/checked.svg'" alt="Plus" />
+        <img
+          @click="onClickAdd"
+          :src="!isAdded ? '/vue-study-project/plus.svg' : '/vue-study-project/checked.svg'"
+          alt="Plus"
+        />
       </div>
     </div>
   </div>

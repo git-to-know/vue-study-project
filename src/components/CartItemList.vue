@@ -12,7 +12,7 @@ const { cart, removeFromCart } = inject('cart')
       :key="item.id"
       :title="item.title"
       :price="item.price"
-      :imageUrl="`https://6e1cedbfa5a689ef.mokky.dev/items${item.imageUrl}`"
+      :imageUrl="item.imageUrl"
       @on-click-remove="() => removeFromCart(item)"
     />
   </div>
