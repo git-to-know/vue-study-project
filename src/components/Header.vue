@@ -8,7 +8,7 @@ const emit = defineEmits(['openDrawer'])
 
 <template>
   <header class="flex justify-between border-b border-slate-200 px-10 py-8">
-    <RouterLink to="/">
+    <RouterLink to="/vue-study-project/">
       <div class="flex items-center gap-4">
         <img src="/logo.png" alt="logo" class="w-10" />
         <div>
@@ -27,7 +27,7 @@ const emit = defineEmits(['openDrawer'])
         <b>{{ totalPrice }} руб.</b>
       </li>
 
-      <RouterLink to="/favorites">
+      <RouterLink to="/vue-study-project/favorites">
         <li class="flex items-center gap-3 text-gray-500 hover:text-black cursor-pointer">
           <img src="/heart.svg" alt="like" />
           <span>Закладки</span>
